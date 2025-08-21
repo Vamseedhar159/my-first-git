@@ -1,0 +1,13 @@
+name: Hello Workflow
+
+on: [push]
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout repo
+        uses: actions/checkout@v3
+
+      - name: print Hello
+        run: echo "hello from github actions"
